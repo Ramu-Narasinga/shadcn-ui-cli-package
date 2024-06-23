@@ -1,0 +1,43 @@
+{
+  "name": "commanderjs-usage-in-shadcnui",
+  "version": "1.0.0",
+  "description": "This demonstrates how Commanderjs is used in shadcnui CLI package",
+  "main": "index.js",
+  "scripts": {
+    "build": "tsup",
+    "start:dev": "cross-env COMPONENTS_REGISTRY_URL=http://localhost:3001 node dist/index.js",
+    "start": "node dist/index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "type": "module",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Ramu-Narasinga/commanderjs-usage-in-shadcn-ui.git"
+  },
+  "keywords": [
+    "shadcnui",
+    "commanderjs",
+    "init",
+    "add",
+    "diff",
+    "command"
+  ],
+  "author": "Ramu Narasinga",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Ramu-Narasinga/commanderjs-usage-in-shadcn-ui/issues"
+  },
+  "homepage": "https://github.com/Ramu-Narasinga/commanderjs-usage-in-shadcn-ui#readme",
+  "devDependencies": {
+    "@types/node": "^20.14.8",
+    "tsup": "^8.1.0",
+    "type-fest": "^4.20.1",
+    "typescript": "^5.5.2"
+  },
+  "dependencies": {
+    "commander": "^12.1.0",
+    "fs-extra": "^11.2.0",
+    "path": "^0.12.7",
+    "zod": "^3.23.8"
+  }
+}
