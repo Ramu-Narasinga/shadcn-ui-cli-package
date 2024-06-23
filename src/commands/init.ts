@@ -21,7 +21,7 @@ export const init = new Command()
   .action(async (opts) => {
     try {
       const options = initOptionsSchema.parse(opts);
-      console.log("options passed to init command", options);
+      console.log("options passed to init command::", options);
       const cwd = path.resolve(options.cwd);
     } catch (error) {
       console.log(error);
